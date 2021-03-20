@@ -6,7 +6,6 @@
  */
 
 /* Private includes ----------------------------------------------------------*/
-#include "main.h"
 #include "gpio.h"
 #include "DIO.h"
 #include "DigitalSampler.h"
@@ -64,7 +63,7 @@ void DigitalSampler_SetAssertionLevel(tDigitalSampler_CtxHandle context,uint8_t 
 }
 
 /**
-  * @brief Get the current state of proximity sensor
+  * @brief Get the current state
   * @param
   * @retval state
 */
@@ -79,7 +78,7 @@ tDigitalSampler_SamplingState DigitalSampler_GetCurrSamplingState(tDigitalSample
 }
 
 /**
-  * @brief Get the prev state of proximity sensor
+  * @brief Get the prev state
   * @param
   * @retval state
 */
@@ -95,8 +94,8 @@ tDigitalSampler_SamplingState DigitalSampler_GetPrevSamplingState(tDigitalSample
 
 
 /**
-  *@brief Get the detecting time in ms
-  *@param button button entity
+  *@brief Get the current state time
+  *@param
   *@retval
 */
 uint32_t DigitalSampler_GetCurrSamplingStateTime(tDigitalSampler_CtxHandle context)
@@ -110,7 +109,7 @@ uint32_t DigitalSampler_GetCurrSamplingStateTime(tDigitalSampler_CtxHandle conte
 }
 
 /**
-  *@brief Update state of a proximity
+  *@brief Update state of the samples at sampling_rate_ms (Should be called periodically at sampling_rate_ms)
   *@param void
   *@retval void
 */
